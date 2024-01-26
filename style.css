@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav Bar Coding Start */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    height: fit-content;
+    position: sticky;
+    /* border: 1px solid red; */
+    height: min-content;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+
+
+}
+
+.logo {
+    margin: 0 0 0 .20em;
+}
+
+.logo a {
+    color: rgb(28, 24, 22);
+}
+
+.logo,
+.navigation {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.logo a,
+.navigation a {
+    text-decoration: none;
+    letter-spacing: .20rem;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    padding: 1em;
+    color: black;
+}
+
+.navigation a:hover {
+    background: lightblue;
+}
+
+/* *********** media queries *********** */
+@media all and (max-width: 990px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+
+/* ****** ****** */
+@media all and (max-width: 600px) {
+
+    .logo {
+        margin: .25em 0;
+        align-self: left;
+        /* align the logo to the left side of 'flex-container' */
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 5px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+.donate {
+    background-color: blue;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    pointer-events: fill;
+}
+
+.sponser {
+    background-color: green;
+    color: white;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.donate:hover {
+    transform: scale(1.1);
+}
+
+.sponser:hover {
+    transform: scale(1.1);
+}
+
+/* Nav Bar Coding End */
+.wel{
+    font-size: 50px;
+}
+.say{
+    font-size: 50px;
+    color: green;
+
+}
+#element{
+    color: blue;
+    font-size: 30px;
+
+}
+.text-div {
+    background-color: #f0f0f0;
+    width: fit-content;
+    text-align: center;
+}
+
+.image-div img {
+    width: fit-content;
+    height: auto;
+    margin-left: 20%;
+
+}
+.outer-div {
+    display: flex;
+}
+
+.para{
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top:20px ;
+}
+
+
+.outer-div button{
+    width: 20%;
+
+}
